@@ -1,0 +1,237 @@
+/*restaurant */
+#restaurant-ul{
+    /*box-sizing: border-box;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 4.6vw;
+    width: 100%;
+    list-style-type: none;
+}
+
+#restaurant-ul > p{
+    /*font-weight: bold;*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+    margin: 6vw 14vw 3vw 0;
+}
+
+.restaurant-li{
+    position: relative;
+    margin-left: 3%;
+    padding: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    transition: opacity 0.4s;
+    /*border: 1px solid black;*/
+}
+
+.random{
+    margin-top: 0vw;
+    /*background-color: #F6B78A;*/
+    color: black;
+}
+
+.random > div{
+    background-color: #F6B78A;
+}
+
+
+
+.random button{
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    padding: 7px 13px;
+    /*float: right;*/
+    border-radius: 50px;
+    background: #FF5C00;
+    /*align-items: center;*/
+    justify-content: center;
+    /*display: flex;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    transition: 0.2s ease;
+}
+.random button:hover{
+    color: white;
+    background: #cf4c00;
+    cursor: pointer;
+}
+
+.restaurant-item{
+    position: relative;
+    background-color: #ff9800;
+    width: 24vw;
+    height: 24vw;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 50%;
+    padding-left: 10px;
+    text-align: justify;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.restaurant-image{
+    border-radius: 40%;
+    display: block;
+    /*border: 1px solid black;*/
+    width: 12vw;
+    height: 6.5vw;
+    padding:  1vw 0 0 0;
+    margin: 2vw auto auto auto;
+    object-fit: contain;
+}
+
+.random-restaurant-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    color: #083755;
+    /*width: 12vw;*/
+    /*height: 6.5vw;*/
+    padding:  15% 0 0 0;
+    margin: 0 auto 5% auto;
+    object-fit: contain;
+    /*border: 1px solid black;*/
+    /*font-style: strong;*/
+    font-weight: normal;
+    /*font-weight: 600;*/
+    /*font-size: 30px;*/
+    text-align: center;
+}
+.random-restaurant-text b{
+    font-weight: 620;
+}
+
+.restaurant-image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background:rgba(0,0,0, 0.75);
+    color: rgb(154, 212, 154);
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;/*display text in center*/
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;/*makes the text to be hovered invisible*/
+    transition: opacity 0.25s;/*animation for the hovered page*/
+}
+
+.restaurant-image-overlay a{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration:none ;
+    padding: 3px;
+    cursor: pointer;
+}
+.restaurant-image-overlay:hover{
+    opacity: 1;/*show the text when image is hovered*/
+}
+
+/*Animation: Text is pushed up when image is hovered*/
+.restaurant-image-overlay > *{
+    transform: translateY(20px);
+    transition: transform 1s;
+
+}
+
+.restaurant-image-overlay:hover > *{
+    /*Text should come out from the bottom*/
+    transform: translateY(0);
+}
+
+.restaurant-name{
+    margin-top:-10px;
+    padding: 2px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.restaurant-description{
+    font-size: 13px;
+    margin: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.restaurant-food-item{
+    display: inline-block;
+    text-align: center;
+    /*padding: 13px;*/
+    padding-top: 7px;
+    padding-right: 3px;
+    padding-bottom: 7px;
+    padding-left: 3px;
+    border-radius: 50%;
+    clear: none;
+}
+
+.restaurant-food-item img{
+    width: 4.5vw;
+    height: 4.5vw;
+    display:block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#food-item-list{
+    padding: 2px 0;
+    display: flex;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/*#food-item-list .food-item img{*/
+/*    width: 60px;*/
+/*    height: 60px;*/
+/*    margin-left: 8px;*/
+/*    display: inline-block;*/
+/*}*/
+
+
+.restaurant-li h6{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-family: CoreSans, sans-serif;
+}
+
+.restaurant-information{
+    padding: 3px;
+    display: initial;
+}
+
+.restaurant-information h6{
+    font-size: 17px;
+}
+
+.restaurant-distance{
+    float: left;
+    margin-top: 2px;
+    margin-left: 70px;
+    display: inline;
+}
+
+.restaurant-time{
+    float:right;
+    margin-top: 2px;
+    margin-right: 70px;
+    display: inline;
+}

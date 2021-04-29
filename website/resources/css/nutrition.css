@@ -1,0 +1,70 @@
+.nutritional-info{
+    /*position: absolute;*/
+    /*width: 30%;*/
+    /*height: 20vw;*/
+    /*border: 1px solid black;*/
+    /*align-self: flex-end;*/
+    /*bottom: 0;*/
+
+}
+
+svg > g > g:last-child { pointer-events: none }
+
+.nutritional-info-checkbox{
+    left: 20px;
+    display: block;
+    width: 280px;
+}
+
+#nutritional-info-text1{
+    margin-left: 3%;
+}
+#nutritional-info-text2{
+    margin-left: 3%;
+}
+
+.nutrition{
+    /*visibility: hidden;*/
+    /*border: 1px solid black;*/
+    overflow: hidden;
+    /*text-align: center;*/
+    display: none;
+
+}
+
+#piechart-1{
+    width: 25vw;
+    height: 18vw;
+    padding: 0;
+    z-index: -1;
+    text-align: center;
+}
+#piechart-2{
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*height: 20vw;*/
+    /*margin: 0 9vw 0 0;*/
+    padding: 0;
+    /*margin-right: 10vw;*/
+    z-index: -1;
+    margin-top: 1vw;
+    /*border: 1px solid black;*/
+}
+.nutrition h2{
+    margin: 0 0 0 -9vw;
+    z-index: 2;
+    font-size: 1em;
+    text-align: left;
+    font-weight: normal;
+}
+
+#piechart-info{
+    text-align: center;
+    height:52vh;
+}
+
+#piechart-info .nutritional-info-checkbox{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
